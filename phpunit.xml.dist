@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/bootstrap.php" colors="true">
+    <testsuites>
+        <testsuite name="SodiumCrypto Test Suite">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+    <coverage>
+        <report>
+            <html outputDirectory="build/coverage"/>
+        </report>
+    </coverage>
+    <php>
+        <ini name="memory_limit" value="-1"/>
+        <env name="APP_ENV" value="test"/>
+    </php>
+</phpunit>
