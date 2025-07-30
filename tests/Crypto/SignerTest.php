@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Vendor\SodiumCrypto\Tests\Crypto;
+namespace SodiumCrypto\Tests\Crypto;
 
 use PHPUnit\Framework\TestCase;
-use Vendor\SodiumCrypto\Crypto\Signer;
-use Vendor\SodiumCrypto\Crypto\KeyManager;
+use SodiumCrypto\Crypto\Signer;
+use SodiumCrypto\Crypto\KeyManager;
 
 final class SignerTest extends TestCase
 {

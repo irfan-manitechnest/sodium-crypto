@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Vendor\SodiumCrypto\Crypto;
+namespace SodiumCrypto\Crypto;
 
-use Vendor\SodiumCrypto\Exception\SigningException;
-use Vendor\SodiumCrypto\Exception\VerificationException;
+use SodiumCrypto\Exception\SigningException;
+use SodiumCrypto\Exception\VerificationException;
 
 final class Signer
 {

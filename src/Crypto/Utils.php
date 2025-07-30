@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Vendor\SodiumCrypto\Crypto;
+namespace SodiumCrypto\Crypto;
 
 final class Utils
 {

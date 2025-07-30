@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Vendor\SodiumCrypto\Tests\Crypto;
+namespace SodiumCrypto\Tests\Crypto;
 
 use PHPUnit\Framework\TestCase;
-use Vendor\SodiumCrypto\Crypto\PasswordEncryptor;
+use SodiumCrypto\Crypto\PasswordEncryptor;
 
 final class PasswordEncryptorTest extends TestCase
 {

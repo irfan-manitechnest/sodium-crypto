@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Vendor\SodiumCrypto\Crypto;
+namespace SodiumCrypto\Crypto;
 
-use Vendor\SodiumCrypto\Exception\EncryptionException;
-use Vendor\SodiumCrypto\Exception\DecryptionException;
+use SodiumCrypto\Exception\EncryptionException;
+use SodiumCrypto\Exception\DecryptionException;
 
 final class Encryptor
 {

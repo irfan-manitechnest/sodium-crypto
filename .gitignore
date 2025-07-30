@@ -1,0 +1,35 @@
+# Composer dependencies
+/vendor/
+
+# PHPUnit cache & results
+.phpunit.cache/
+coverage/
+
+# IDE & Editor settings
+.idea/
+.vscode/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs & temp files
+*.log
+*.tmp
+
+# Autoload cache (if any)
+composer.lock
+
+# PHPStorm / Xdebug temp
+._*
+.phpunit.result.cache
+
+# Build artifacts
+/build/
+dist/
+
+# Environment/config overrides
+.env
+.env.local
+.env.test

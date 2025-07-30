@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Vendor\SodiumCrypto\Tests\Crypto;
+namespace SodiumCrypto\Tests\Crypto;
 
 use PHPUnit\Framework\TestCase;
-use Vendor\SodiumCrypto\Crypto\Encryptor;
-use Vendor\SodiumCrypto\Crypto\KeyManager;
+use SodiumCrypto\Crypto\Encryptor;
+use SodiumCrypto\Crypto\KeyManager;
 
 final class EncryptorTest extends TestCase
 {
