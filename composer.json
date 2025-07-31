@@ -1,5 +1,5 @@
 {
-    "name": "vendor/sodium-crypto",
+    "name": "irfan-manitechnest/sodium-crypto",
     "description": "A modern PHP 8.3+ encryption library (Fidelius replacement) using the Sodium extension.",
     "type": "library",
     "license": "MIT",

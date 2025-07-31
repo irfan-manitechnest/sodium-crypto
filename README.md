@@ -1,8 +1,11 @@
 # SodiumCrypto – A Modern PHP Encryption Library (Fidelius Replacement)
 
+[![PHPUnit Tests](https://github.com/irfan-manitechnest/sodium-crypto/actions/workflows/tests.yml/badge.svg)](https://github.com/irfan-manitechnest/sodium-crypto/actions/workflows/tests.yml)
 [![PHP Version](https://img.shields.io/badge/PHP-8.3%2B-blue.svg)](https://www.php.net/)
+[![Packagist Version](https://img.shields.io/packagist/v/irfan-manitechnest/sodium-crypto.svg)](https://packagist.org/packages/irfan-manitechnest/sodium-crypto)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Build Status](https://img.shields.io/badge/tests-passing-brightgreen.svg)]()
+
+A modern PHP 8.3+ encryption library (Fidelius replacement) using the Sodium extension.
 
 A lightweight, object-oriented encryption/decryption library built on PHP's [libsodium extension](https://www.php.net/manual/en/book.sodium.php).
 It provides both **symmetric** and **asymmetric authenticated encryption** workflows (Fidelius-compatible), secure signing, password hashing, and utilities.
@@ -23,7 +26,8 @@ It provides both **symmetric** and **asymmetric authenticated encryption** workf
 ## 📦 Installation
 
 ```bash
-composer require vendor/sodium-crypto
+composer require irfan-manitechnest/sodium-crypto
+
 ```
 
 Ensure the PHP [Sodium extension](https://www.php.net/manual/en/book.sodium.php) is enabled (`php_sodium.dll` or built-in since PHP 7.2+).
@@ -52,8 +56,8 @@ use SodiumCrypto\Crypto\FideliusEncryptor;
 $encrypted = FideliusEncryptor::encrypt(
     "Hello Secure World",
     $senderPrivateKey,
-    $senderPublicKey,
-    $recipientPublicKey
+    $senderPublicKey,      // Sender's public key
+    $recipientPublicKey    // Recipient's public key
 );
 
 // Recipient decrypts
@@ -136,7 +140,7 @@ composer.json
 
 Below is the UML diagram representing the library's structure and relationships:
 
-![SodiumCrypto UML](SodiumCrypto_UML.png)
+![SodiumCrypto UML](https://raw.githubusercontent.com/irfan-manitechnest/sodium-crypto/main/SodiumCrypto_UML.png)
 
 This diagram illustrates the core classes (`Encryptor`, `FideliusEncryptor`, `KeyManager`, `Signer`, `PasswordEncryptor`, and `Utils`) and how they interact.
 Exception classes are thrown across all cryptographic components.
